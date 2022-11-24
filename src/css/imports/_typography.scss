@@ -18,7 +18,12 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-color: var(--off-white);
- }
+}
+
+h1 {
+  font-family: 'special_eliteregular';
+  text-transform: uppercase;
+}
 
 p {
   margin-bottom: var(--spacing-medium);
