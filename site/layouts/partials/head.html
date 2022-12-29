@@ -4,8 +4,8 @@
 
   {{ $stylesheet := .Site.Data.webpack.main }}
   {{ with $stylesheet.css }}
-    <link href="{{ relURL . }}" rel="stylesheet">
 		<link href="/fonts/specialelite.css" rel="stylesheet">
+		<link href="/css/index.css" rel="stylesheet">
   {{ end }}
 
 	<meta charset="utf-8">

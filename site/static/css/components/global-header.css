@@ -1,0 +1,28 @@
+.global-header {
+  background-color: var(--black);
+  padding: 2rem;
+}
+
+.global-header a {
+  color: var(--color-primary);
+  font-size: 2rem;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: var(--hover-transition);
+}
+
+.global-header a:hover {
+  color: var(--color-primary-darkest);
+}
+
+@media (min-width: 768px) {
+  .global-header nav {
+    height: 100vh;
+    position: fixed;
+  }
+
+  .global-header nav a {
+    display: block;
+  }
+}
+

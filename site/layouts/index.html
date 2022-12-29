@@ -2,4 +2,13 @@
 
 {{ partial "jumbotron" (dict "imageUrl" .Params.image "title" .Title "subtitle" .Params.subtitle) }}
 
+{{ range where site.RegularPages "Section" "post" }}     
+    <article>
+        <h3>{{ .Title }}</a></h3>
+        <p class="date">{{ .Date.Format "Jan 2, 2006" }}</p>
+        <p class="description">{{ .Description }}</p>
+        <a href="{{ .RelPermalink }}">Read more →</a>
+    </article>
+{{ end }}
+
 {{ end }}

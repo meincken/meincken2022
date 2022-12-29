@@ -1,0 +1,17 @@
+.jumbotron {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  height: 30rem;
+  text-align: center;
+  background-size: cover;
+  flex-flow: column;
+}
+
+.jumbotron h1,
+.jumbotron p {
+  background-color: var(--primary);
+  display: inline-block;
+  padding: 0 1rem;
+  text-transform: uppercase;
+}

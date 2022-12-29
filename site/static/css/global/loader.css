@@ -1,0 +1,25 @@
+/* Loaders / Spinners */
+.loader,
+.spinner {
+  margin: 1rem;
+  border: 0.25rem solid var(--primary);
+  border-top: 0.25rem solid var(--greymid-dark);
+  border-radius: 50%;
+  width: 4rem;
+  height: 4rem;
+  animation: spin 1s linear infinite;
+}
+
+.loader {
+  border: 0.25rem solid var(--greymid-dark);
+  border-top: 0.25rem solid var(--primary);
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
