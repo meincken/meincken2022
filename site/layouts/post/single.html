@@ -1,14 +1,13 @@
 {{ define "main" }}
-  <article class="blog-post">
-    <h1>{{.Title}}</h1>
-    <div>
-      <p>{{ .Date.Format "Mon, Jan 2, 2006" }}</p>
-      <p>Read in {{ .ReadingTime }} minutes</p>
-    </div>
-    <div>
+{{ partial "jumbotron" (dict "imageUrl" .Params.image "title" .Title "subtitle" .Params.subtitle) }}
+
+  <section class="blog-post">
+    <p>{{ .Date.Format "Mon, Jan 2, 2006" }}</p>
+    <p>Read in {{ .ReadingTime }} minutes</p>
+    <article>
       <p>{{ .Description }}</p>
       {{ if .Params.image }}<img src="{{ .Params.image }}" alt="{{ .Title }}" />{{ end }}
       {{ .Content }}
-    </div>
-  </article>
+    </article>
+  </section>
 {{ end }}

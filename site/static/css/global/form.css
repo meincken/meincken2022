@@ -8,14 +8,14 @@ input:not([type="checkbox"]),
 textarea,
 select {
   display: block;
-  height: 2rem;
+  height: 4rem;
   background-color: var(--white);
-  border: 1px solid var(--grey);
+  border: 0.1rem solid var(--black);
   border-radius: 0.25rem;
-  padding: 0.25rem 0.5rem;
+  padding: 1rem 1.6rem;
   outline: none;
   width: 100%;
-  margin: 0.25rem 0;
+  margin: 1rem 0;
 }
 
 input:focus,

@@ -1,14 +1,14 @@
 ---
-title: "About"
+title: "About Me"
 logo: "/img/logo.svg"
+image: /img/home-jumbotron.jpg
 ---
 
-We’d love to get in touch with you and hear your ideas and
-questions. We strive to grow and improve constantly and your feedback
-is valuable for us.
+Hey, my name is Nick Meincken, I'm a web developer based in South West London.
+I have a number of hobbies which I enjoy to partake in, mainly cycling and all
+things bike related, but I also have a passion for art and photography.
 
-<h3 class="f4 b lh-title mb2">How can I get…?</h3>
+### H3 title
 
-You can also use the form below for any inquiries about coffee
-availability, monthly subscriptions and scheduling a 1-on-1 session
-with our baristas. Don’t be shy, drop us a line!
+I love active travel, this means I like skiing, scuba diving and a number of things
+in between  

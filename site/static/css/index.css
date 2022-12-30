@@ -9,6 +9,7 @@
 @import "./global/loader.css";
 @import "./global/svg.css";
 @import "./global/global.css";
+@import "./global/helpers.css";
 
 /* components */
 @import "./components/jumbotron.css";

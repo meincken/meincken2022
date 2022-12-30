@@ -1,3 +1,8 @@
 .global-footer {
   text-align: center;
+  margin-top: auto;
+}
+
+.global-footer small {
+  font-weight: 100;
 }

@@ -1,16 +1,12 @@
 {{ define "main" }}
+<!--/* {{ partial "jumbotron" (dict "imageUrl" .Params.image "title" .Title "subtitle" .Params.subtitle) }} */-->
+<img src="{{ .Params.logo }}" alt="">
 
-<div>
+<section class="contact">
 
 		{{ .Content }}
-
-		<div class="flex-ns mb3">
-			{{ range .Params.contact_entries }}
-			{{ end }}
-		</div>
-
 		{{ partial "contact-form" . }}
 
-</div>
+</section>
 
 {{ end }}

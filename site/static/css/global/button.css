@@ -23,6 +23,7 @@ input[type="button"] {
   width: auto;
   height: auto;
   margin: 1.6rem 1rem 1.6rem 0;
+  transition: all 0.5s;
 }
 
 button:hover,
@@ -43,15 +44,15 @@ input[type="button"]:focus {
 /* Extras */
 .primary {
   color: var(--white);
-  border-color: var(--primary);
-  background-color: var(--primary);
+  border-color: var(--color-primary);
+  background-color: var(--color-primary);
 }
 
 .primary:hover,
 .primary:focus {
   color: var(--white);
-  border-color: var(--primary-hover);
-  background-color: var(--primary-hover);
+  border-color: var(--color-primary-darker);
+  background-color: var(--color-primary-darker);
 }
 
 .secondary {

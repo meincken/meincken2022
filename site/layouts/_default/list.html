@@ -2,10 +2,10 @@
 
 {{ partial "jumbotron" (dict "imageUrl" "/img/blog-index.jpg" "title" "Latest stories") }}
 
-<div>
-  <ul id="blog-list" class="flex-ns pa3">
+<div class="blog-roll">
+  <ul>
       {{ range (.Paginator 4).Pages.ByPublishDate.Reverse }}
-          <li class="ph1-ns flex">
+          <li>
             {{ .Render "li"}}
           </li>
       {{ end }}
