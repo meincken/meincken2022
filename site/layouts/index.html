@@ -4,11 +4,10 @@
 
     {{ range where site.RegularPages "Section" "post" }}     
         <article class="blog-roll">
-            <h3>{{ .Title }}</a></h3>
+            <h2>{{ .Title }}</a></h2>
             <p class="date">{{ .Date.Format "Jan 2, 2006" }}</p>
             <p class="description">{{ .Description }}</p>
             <a class="stretched-link" href="{{ .RelPermalink }}">Read more →</a>
         </article>
     {{ end }}
-
 {{ end }}

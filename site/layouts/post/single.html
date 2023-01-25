@@ -9,5 +9,10 @@
       {{ if .Params.image }}<img src="{{ .Params.image }}" alt="{{ .Title }}" />{{ end }}
       {{ .Content }}
     </article>
+    {{ if .Params.gallery }}
+      <my-flickr photoset="{{ .Params.gallery }}">
+        <span slot="title">Cuba</span>
+      </my-flickr>
+    {{ end }}
   </section>
 {{ end }}
