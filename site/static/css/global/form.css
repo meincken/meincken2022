@@ -1,0 +1,40 @@
+/* Forms */
+label {
+  display: block;
+  margin: 0.75rem 0;
+}
+
+input:not([type="checkbox"]),
+textarea,
+select {
+  display: block;
+  height: 4rem;
+  background-color: var(--white);
+  border: 0.1rem solid var(--black);
+  border-radius: 0.25rem;
+  padding: 1rem 1.6rem;
+  outline: none;
+  width: 100%;
+  margin: 1rem 0;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+  border-color: var(--primary);
+}
+
+textarea {
+  resize: none;
+  height: auto;
+  line-height: 1.15;
+}
+
+.checkbox-label {
+  display: flex;
+  align-items: center;
+}
+
+input[type="checkbox"] {
+  margin-right: 0.5rem;
+}

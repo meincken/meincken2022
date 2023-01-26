@@ -1,0 +1,13 @@
+.flickr-gallery {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  max-width: 90rem;
+}
+
+figure {
+  margin: 0;
+}
+
+my-flickr {
+  max-width: 90rem;
+}

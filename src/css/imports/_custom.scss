@@ -1,0 +1,46 @@
+html {
+  font-size: 62.5%;
+}
+
+body {
+  display: grid;
+  font-size: 1.8rem;
+  grid-template-columns: 15rem 1fr;
+  height: 100vh;
+
+  > header {
+    background-color: var(--black);
+    padding: 2rem;
+
+    a {
+      color: var(--color-primary);
+      font-size: 2rem;
+      text-decoration: none;
+      text-transform: uppercase;
+      transition: var(--hover-transition);
+
+      &:hover {
+        color: var(--color-primary-darkest);
+      }
+    }
+
+    nav {
+      height: 100vh;
+      position: fixed ;
+
+      a {
+        display: block;
+      }
+    }
+  }
+
+  main {
+    overflow-y: auto;
+  }
+}
+
+.about,
+.blog-post {
+  max-width: 70rem;
+  padding: 2rem;
+}

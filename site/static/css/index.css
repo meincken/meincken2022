@@ -1,0 +1,18 @@
+@import "./global/variable.css";
+@import "./global/normalize.slim.css";
+@import "./global/base.css";
+@import "./global/list.css";
+@import "./global/button.css";
+@import "./global/form.css";
+@import "./global/search.css";
+@import "./global/card.css";
+@import "./global/loader.css";
+@import "./global/svg.css";
+@import "./global/global.css";
+@import "./global/helpers.css";
+
+/* components */
+@import "./components/jumbotron.css";
+@import "./components/global-header.css";
+@import "./components/global-footer.css";
+@import "./components/flickr.css";
