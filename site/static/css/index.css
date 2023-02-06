@@ -16,3 +16,7 @@
 @import "./components/global-header.css";
 @import "./components/global-footer.css";
 @import "./components/flickr.css";
+
+.blog-post {
+  padding-bottom: 5rem;
+}

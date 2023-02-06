@@ -1,0 +1,15 @@
+{
+  "main": {
+    "css": "main.css",
+    "js": "main.js"
+  },
+  "cms": {
+    "js": "cms.js"
+  },
+  "": {
+    "woff": "fonts/SpecialElite-webfont.woff",
+    "html": "admin/index.html",
+    "css": "fonts/specialelite.css",
+    "keep": "fonts/.keep"
+  }
+}

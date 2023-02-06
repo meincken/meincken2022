@@ -3,7 +3,7 @@
   {{ partial "head" . }}
   <body>
     {{ block "header" . }}{{ partial "nav" . }}{{end}}
-    <main>
+    {{ if .IsHome }}<main class="home">{{else}}<main>{{end}}
       {{ block "main" . }}{{ end }}
     </main>
     {{ block "footer" . }}{{ partial "footer" . }}{{end}}

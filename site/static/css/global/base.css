@@ -1,6 +1,7 @@
 /* Base */
 html {
   font-size: 62.5%;
+  scroll-snap-type: y mandatory;
 }
 
 body {
@@ -11,36 +12,32 @@ body {
   line-height: 1.5;
 }
 
-@media (min-width: 768px) {
-  body {
-    display: grid;
-    height: 100vh;
-    grid-template-columns: 20rem 1fr;
-    grid-template-areas: 
-    "header main"
-    "footer main";
-  }
-
-  main {
-    overflow-y: auto;
-  }
-}
-
 main {
   display: grid;
-  grid-template-rows: 31rem auto;
   grid-template-columns: 
-    [full-start] 1rem 
-    [main-start] minmax(0, 1fr) [main-end]
-    1rem [full-end];
+    [full-start] minmax(20px, 1fr) 
+    [main-start] minmax(320px, 800px) [main-end]
+    minmax(20px, 1fr) [full-end];
 }
+
 
 main > * {
   grid-column: main;
 }
 
+main.home > * {
+  scroll-snap-align: start;
+  min-height: 100vh;
+}
+
 .global-header {
   grid-area: header;
+}
+
+main > section {
+  display: flex;
+  justify-content: center;
+  flex-flow: column;
 }
 
 main {

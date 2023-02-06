@@ -2,9 +2,9 @@
 title: "Coming soon"
 subtitle: All new meincken.com
 image: /img/home-jumbotron.jpg
-blurb:
-    heading: Why Kaldi?
-    text: "Kaldi is the coffee store for everyone who believes that great coffee shouldn't just taste good, it should do good too. We source all of our beans directly from small scale sustainable farmers and make sure part of the profits are reinvested in their communities."
+about:
+    heading: Who is Nick Meincken
+    text: "Hey, my name is Nick Meincken, I'm a web developer based in South West London. I have a number of hobbies which I enjoy to partake in, mainly cycling and all things bike related, but I also have a passion for art, photography and music."
 intro:
     heading: "What we offer"
     text: "Kaldi is the ultimate spot for coffee lovers who want to learn about their java’s origin and support the farmers that grew it. We take coffee production, roasting and brewing seriously and we’re glad to pass that knowledge to anyone."

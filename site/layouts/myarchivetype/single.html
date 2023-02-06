@@ -1,0 +1,18 @@
+{{ define "main" }}
+  <header>
+    <h1>
+      {{ .Title }}
+    </h1>
+  </header>
+  {{ .Content }}
+  {{ range (where .Site.Pages "Type" "post") }}
+  <article>
+    {{ .Date | dateFormat "2006"}}
+    <time>
+      <span class="month">{{ .Date | dateFormat "Jan" }}</span> <!-- print publish month -->
+      <span class="day">{{ .Date | dateFormat "2" }}</span> <!-- print publish day -->
+    </time>
+    <a href="{{ .Permalink }}" title="{{ .Title }}">{{ .Title }}</a>
+  </article>
+  {{ end }}
+{{ end }}

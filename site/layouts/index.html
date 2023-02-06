@@ -2,12 +2,21 @@
 
     {{ partial "jumbotron" (dict "imageUrl" .Params.image "title" .Title "subtitle" .Params.subtitle) }}
 
-    {{ range where site.RegularPages "Section" "post" }}     
+    <section class="about">
+        {{ partial "short-text" .Params.about}}
+    </section>
+    <section class="entries">
+        <h2>Latest entries</h2>
+        {{ range where site.RegularPages "Section" "post" | first 4 }}     
         <article class="blog-roll">
-            <h2>{{ .Title }}</a></h2>
-            <p class="date">{{ .Date.Format "Jan 2, 2006" }}</p>
-            <p class="description">{{ .Description }}</p>
+            <h3>{{ .Title }}</h3>
             <a class="stretched-link" href="{{ .RelPermalink }}">Read more →</a>
         </article>
-    {{ end }}
+        {{ end }}
+        <a href="/archive/">View Archive</a>
+    </section>
+    <section class="contact">
+        {{ .Content }}
+        {{ partial "contact-form" . }}
+    </section>
 {{ end }}
