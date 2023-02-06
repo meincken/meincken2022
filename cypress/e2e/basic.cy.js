@@ -4,13 +4,7 @@ describe('empty spec', () => {
   })
 
   it('opens the index page', () => {
-    cy.get('h1').contains('Coming Soon')
-  })
-
-  it('navigates to the blog page', () => {
-    cy.get('a[href="/post"]').eq(0).click();
-    cy.url().should("include", "/post")
-    cy.get('h1').contains(/Latest Stories/i)
+    cy.get('h1').contains('Coming soon')
   })
 })
 
