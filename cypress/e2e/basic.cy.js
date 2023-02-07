@@ -4,7 +4,7 @@ describe('empty spec', () => {
   })
 
   it('opens the index page', () => {
-    cy.get('h1').contains('Coming soon')
+    cy.get('h1').contains('Nick Meincken')
   })
 })
 
