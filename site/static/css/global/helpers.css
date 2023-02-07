@@ -18,3 +18,43 @@
   z-index: 1;
   content: "";
 }
+
+.scroll-icon {
+  bottom: 5rem;
+  display: block;
+  position: absolute;
+  height: 4.5rem;
+  width: 2.5rem;
+  border: .5rem solid var(--primary);
+  box-shadow: 0 0 0.5rem var(--primary);
+  border-radius: 1.5rem;
+}
+
+.scroll-icon-outer {
+  display: block;
+  position: absolute;
+  left: 50%;
+  top: .6rem;
+  height: 1.2rem;
+  width: .4rem;
+  margin-left: -.2rem;
+  border-radius: 3rem;
+  overflow: hidden;
+}
+
+.scroll-icon-inner {
+  display: block;
+  height: 100%;
+  width: 100%;
+  border-radius: inherit;
+  background: var(--primary);
+  animation: scroll 2.75s ease-in-out infinite;
+}
+
+@keyframes scroll {
+  0%   { transform: translateY(0); }
+  25%  { transform: translateY(-0.6rem); }
+  50%  { transform: translateY(0); }
+  75%  { transform: translateY(0.6rem); }
+  100% { transform: translateY(0); }
+}
