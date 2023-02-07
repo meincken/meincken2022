@@ -43,7 +43,7 @@ input[type="button"]:focus {
 
 /* Extras */
 .primary {
-  color: var(--white);
+  color: var(--black);
   border-color: var(--color-primary);
   background-color: var(--color-primary);
 }

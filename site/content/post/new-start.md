@@ -2,7 +2,7 @@
 title: Meincken 2023
 date: 2023-02-03T12:00:00.000Z
 description: A fresh beginnning to an old site.
-image: /img/blog-chemex.jpg
+image: /img/header-background.webp
 gallery: false
 ---
 

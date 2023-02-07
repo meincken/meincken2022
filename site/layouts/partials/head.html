@@ -5,7 +5,7 @@
   {{ $stylesheet := .Site.Data.webpack.main }}
   {{ with $stylesheet.css }}
 		<link href="/fonts/specialelite.css" rel="stylesheet">
-		<link href="/css/index.css" rel="stylesheet">
+		<link href="/css/index.css" rel="stylesheet" media="all">
   {{ end }}
 
 	<meta charset="utf-8">
@@ -22,10 +22,11 @@
 	<link rel="manifest" href="/manifest.json">
 	<link rel="mask-icon" href="/img/safari-pinned-tab.svg" color="#ff4400">
 	<meta name="theme-color" content="#fff">
+	<meta name="description" content="Hey my name is Nick Meincken. This is my site, please enjoy.">
 
 	<!-- Open Graph -->
 	<meta property="og:type" content="business.business">
-	<meta property="og:title" content="Kaldi | Great coffee with a conscience">
+	<meta property="og:title" content="Meincken | Photographer, Artist, General nuisance.">
 	<meta property="og:url" content="/">
 	<meta property="og:image" content="/img/og-image.jpg">
 

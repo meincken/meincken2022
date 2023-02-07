@@ -1,4 +1,33 @@
-<header class="cover jumbotron" style="background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.2)), url('{{.imageUrl}}')">
+<style>
+  .jumbotron {
+    align-items: center;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.2)), url('{{.imageUrl}}');
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    text-align: center;
+    background-position: center center;
+    background-size: cover;
+    flex-flow: column;
+    grid-column: full;
+    margin-bottom: 2rem;
+  }
+
+  .jumbotron h1,
+  .jumbotron p {
+    background-color: var(--primary);
+    color: var(--black);
+    display: inline-block;
+    padding: 0 1rem;
+    text-transform: uppercase;
+  }
+
+  .jumbotron h1 {
+    font-size: 5vw;
+    line-height: 1;
+  }
+</style>
+<header class="cover jumbotron">
   <h1>
     {{.title}}
   </h1>
