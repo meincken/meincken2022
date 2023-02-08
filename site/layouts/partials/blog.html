@@ -1,17 +1,13 @@
-<div class="pv4">
-	<div class="ph3 mw7 center">
+<div>
 
-		<h2 class="f2 b lh-title mb3">Latest stories</h2>
+	<h2>Latest stories</h2>
 
-		<div>
-			{{ range first 4 (where .Data.Pages "Type" "post") }}
-				{{ .Render "li" }}
-			{{ end }}
-		</div>
-
-		<div class="tc">
-			<a href="/post" class="stretched-link">Read more</a>
-		</div>
-
+	<div>
+		{{ range first 4 (where .Data.Pages "Type" "post") }}
+			{{ .Render "li" }}
+		{{ end }}
 	</div>
+
+	<a href="/post" class="stretched-link">Read more</a>
+
 </div>
