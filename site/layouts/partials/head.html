@@ -12,8 +12,8 @@
 	<meta http-equiv="x-ua-compatible" content="ie=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
   <base href="{{ $.Site.BaseURL }}">
-
-	<link href="https://fonts.googleapis.com/css?family=Nunito+Sans:100,400,700&display=swap" rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+	<link rel="reload" href="https://fonts.googleapis.com/css?family=Nunito+Sans:100,400,700&display=swap" rel="stylesheet" crossorigin>
 
 	<!-- Favicons -->
 	<link rel="apple-touch-icon" sizes="180x180" href="/img/apple-touch-icon.png">
@@ -31,6 +31,6 @@
 	<meta property="og:image" content="/img/og-image.jpg">
 
   {{ if .IsHome }}
-    <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+    <script src="https://identity.netlify.com/v1/netlify-identity-widget.js" defer></script>
   {{ end }}
 </head>

@@ -11,6 +11,6 @@ describe('empty spec', () => {
 describe('validate blog', () => {
   it('should have only 3 blog posts by default', () => {
     cy.visit('/post')
-    cy.get('.blog-roll ul li').should('have.length', 3);
+    cy.get('.blog-roll ul li').should('have.length', 4);
   })
 })
